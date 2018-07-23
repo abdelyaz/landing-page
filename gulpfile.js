@@ -27,7 +27,7 @@ function copyFile(source, destination) {
  // Concatenate & Minify JS
 gulp.task('js', function() {
   return gulp.src(src + 'js/*.js')
-  .pipe(concat('main.js'))
+  .pipe(concat('script.js'))
   .pipe(rename({suffix: '.min'}))
   .pipe(uglify())
   .pipe(gulp.dest(dest + 'js'));
