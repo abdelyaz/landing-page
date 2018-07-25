@@ -10,13 +10,13 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
     imagemin = require('gulp-imagemin'),
+    browserSync = require('browser-sync').create(),
     cache = require('gulp-cache');
-
-
 
 // Copy View Files
 gulp.task('copy', function () {
-  copyFile(src + 'view/*', dest);
+  copyFile(src + 'view/*', dest)
+  copyFile(src + 'fonts/*', dest + 'fonts/');
 });
 function copyFile(source, destination) {
   return gulp.src(source)
@@ -55,5 +55,31 @@ gulp.task('watch', function() {
    // Watch image files
   gulp.watch(src + 'images/**/*', ['images']);
  });
+
+
+  // Watch for changes in files
+  gulp.task('watch', function() {
+    // Watch Copy
+  gulp.watch(src + 'view/*', ['copy']);
+    // Watch .js files
+  gulp.watch(src + 'js/*.js', ['js']);
+    // Watch .scss files
+  gulp.watch(src + 'scss/*.scss', ['scss']);
+    // Watch image files
+  gulp.watch(src + 'images/**/*', ['images']);
+  });
+
+  // Browser Sync
+ gulp.task('serve', function () {
+  // Static server & Autoreload
+  browserSync.init({
+    server: {
+      baseDir: dest
+    }
+  });
+});
+
+
+
  // Default Task
-gulp.task('default', ['copy', 'js', 'scss', 'images', 'watch']);
+gulp.task('default', ['copy', 'js', 'scss', 'images', 'watch', 'serve']);

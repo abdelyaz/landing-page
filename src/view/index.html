@@ -6,6 +6,7 @@
   <title>Fudi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
 </head>
 <body>
@@ -13,8 +14,41 @@
   <!-- Header -->
 
   <header class="block-header">
-    <div class="block-header__menu"></div>
-    <div class="block-header__slogan"></div>
+    <div class="block-header__menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="block-header__menu--logo">
+              <a href="#">
+                <img src="img/logo.png" alt="Logo Fudi">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <nav class="block-header__menu--nav">
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li id="burger-menu">
+                  <i class="fa fa-bars"></i>
+                  <ul id="sub-menu">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-header__slogan">
+      <p class="fav">Find your Favorite</p>
+      <p class="title">Recipes</p>
+      <a href="#" class="button">Get started</a>
+      <p class="desc">or send us your own recipes and <a href="#">get rewarded!</a></p>
+    </div>
   </header>
 
 
