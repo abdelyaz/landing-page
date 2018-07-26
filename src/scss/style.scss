@@ -41,7 +41,7 @@ p {
 
 /**************
 * Block Header
-***************/
+**************/
 .block-header {
   position: relative;
   min-height: 800px;
@@ -166,13 +166,16 @@ p {
 
 /***************
 * Block Features
-****************/
+***************/
 .block-features {
   padding: 95px 0;
   @media screen and (max-width: $tablet) {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   &__card {
+    @media screen and (max-width: $tablet) {
+      margin-top: 20px;
+    }
     &--icon {
       width: 100px;
       height: 100px;
@@ -217,3 +220,47 @@ p {
     }
   }
 }
+
+/********************
+* Block Introduction
+********************/
+.block-intro {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  &__img {
+    max-width: 495px;
+    width: 100%;
+    text-align: center;
+    img {
+      width: 100%;
+      @media screen and (max-width: $tablet) {
+        width: 60%;
+      }
+    }
+  }
+  &__article {
+    margin-top: 100px;
+    &--title {
+      position: relative;
+      font-size:  18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 88px;
+        height: 1px;
+        background-color: #f57365;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &--text {
+      font-weight: 100;
+
+    }
+  }
+}
+
