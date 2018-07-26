@@ -57,18 +57,6 @@ gulp.task('watch', function() {
  });
 
 
-  // Watch for changes in files
-  gulp.task('watch', function() {
-    // Watch Copy
-  gulp.watch(src + 'view/*', ['copy']);
-    // Watch .js files
-  gulp.watch(src + 'js/*.js', ['js']);
-    // Watch .scss files
-  gulp.watch(src + 'scss/*.scss', ['scss']);
-    // Watch image files
-  gulp.watch(src + 'images/**/*', ['images']);
-  });
-
   // Browser Sync
  gulp.task('serve', function () {
   // Static server & Autoreload

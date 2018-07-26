@@ -17,6 +17,12 @@
 
 }
 
+// Variables
+
+$tablet : 768px;
+$mobile-L: 576px;
+$mobile-S:  423px;
+
 
 // Globals
 
@@ -25,26 +31,27 @@ body {
   font-weight: 400;
   color: #000;
 }
-
-
-
-$tablette : 767px;
-$mobile-L: 576px;
-$mobile-S:  423px;
-
-
-
+a , a:hover, a:focus {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  margin: 0;
+}
 
 /**************
 * Block Header
 ***************/
 .block-header {
   position: relative;
-  min-height: 880px;
+  min-height: 800px;
   height: 100%;
   background: url(../img/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: $tablet) {
+    min-height: 595px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -101,9 +108,11 @@ $mobile-S:  423px;
     }
   }
   &__slogan {
+    position: relative;
     text-align:  center;
     color: #fff;
-    margin: 10% 0px;
+    margin: 8% 0px;
+    z-index: 1;
     .fav {
         font-family: 'Almendra', serif;
         font-size: 36px;
@@ -132,9 +141,14 @@ $mobile-S:  423px;
       font-size: 20px;
       display: inline-block;
       text-transform: uppercase;
+      transition: all .2s ease-in-out;
       @media screen and (max-width: $mobile-L) {
         padding: 10px 40px;
-        font-size: 30px;
+        font-size: 22px;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #8c8c8c;
       }
     }
     .desc {
@@ -144,7 +158,62 @@ $mobile-S:  423px;
       font-size: 16px;
       a {
         color: #fff;
+        text-decoration: underline;
       }
+    }
+  }
+}
+
+/***************
+* Block Features
+****************/
+.block-features {
+  padding: 95px 0;
+  @media screen and (max-width: $tablet) {
+    padding: 40px 0;
+  }
+  &__card {
+    &--icon {
+      width: 100px;
+      height: 100px;
+      display: block;
+      border: 1px solid #221f1f;
+      border-radius: 50%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      &.burger {
+        background-image: url(../img/burger.png);
+      }
+      &.cash {
+        background-image: url(../img/cash.png);
+      }
+      &.chef {
+        background-image: url(../img/chef.png);
+      }
+    }
+    &--title {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 88px;
+        height: 1px;
+        background-color: #f57365;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    &--desc {
+      text-align: center;
+      font-weight: 100;
+      margin-top: 20px;
     }
   }
 }
