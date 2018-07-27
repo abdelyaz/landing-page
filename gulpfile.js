@@ -40,7 +40,7 @@ gulp.task('scss', function() {
 });
 // Image optimisation
  gulp.task('images', function() {
-  return gulp.src(src + 'images/**/*')
+  return gulp.src(src + 'img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
     .pipe(gulp.dest(dest + 'img'));
 });
@@ -53,7 +53,7 @@ gulp.task('watch', function() {
    // Watch .scss files
   gulp.watch(src + 'scss/*.scss', ['scss']);
    // Watch image files
-  gulp.watch(src + 'images/**/*', ['images']);
+  gulp.watch(src + 'img/**/*', ['images']);
  });
 
 
