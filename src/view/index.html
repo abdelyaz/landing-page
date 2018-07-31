@@ -14,172 +14,304 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="block-header">
-    <div class="block-header__menu">
+<main>
+  <div class="container no-padding">
+    <!-- Header -->
+    <header class="block-header">
+      <div class="block-header__menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="block-header__menu--logo">
+                <a href="#">
+                  <img src="img/logo.png" alt="Logo Fudi">
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <nav class="block-header__menu--nav">
+                <ul>
+                  <li><a href="#">Log in</a></li>
+                  <li><a href="#">Sign up</a></li>
+                  <li id="burger-menu">
+                    <i class="fa fa-bars"></i>
+                    <ul id="sub-menu">
+                      <li>Item 1</li>
+                      <li>Item 2</li>
+                      <li>Item 3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-header__slogan">
+        <p class="fav">Find your Favorite</p>
+        <p class="title">Recipes</p>
+        <a href="#" class="button">Get started</a>
+        <p class="desc">or send us your own recipes and <a href="#">get rewarded!</a></p>
+      </div>
+    </header>
+
+    <!-- Block Features -->
+    <div class="block-features">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <div class="block-header__menu--logo">
-              <a href="#">
-                <img src="img/logo.png" alt="Logo Fudi">
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-9">
-            <nav class="block-header__menu--nav">
-              <ul>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Sign up</a></li>
-                <li id="burger-menu">
-                  <i class="fa fa-bars"></i>
-                  <ul id="sub-menu">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="block-header__slogan">
-      <p class="fav">Find your Favorite</p>
-      <p class="title">Recipes</p>
-      <a href="#" class="button">Get started</a>
-      <p class="desc">or send us your own recipes and <a href="#">get rewarded!</a></p>
-    </div>
-  </header>
-
-  <!-- Block Features -->
-  <div class="block-features">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="block-features__card">
-            <i class="block-features__card--icon burger animated"></i>
-            <h3 class="block-features__card--title">get inspired</h3>
-            <p class="block-features__card--desc">
-              Lorem ipsum dolor sit amet, consectetur adipisc
-              Pellentesque vel enim a elit viverra elementuma.
-              Aliquam erat volutpat.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block-features__card">
-            <i class="block-features__card--icon cash"></i>
-            <h3 class="block-features__card--title">get rewarded</h3>
-            <p class="block-features__card--desc">
-              Lorem ipsum dolor sit amet, consectetur adipisc
-              Pellentesque vel enim a elit viverra elementuma.
-              Aliquam erat volutpat.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block-features__card">
-            <i class="block-features__card--icon chef"></i>
-            <h3 class="block-features__card--title">get social</h3>
-            <p class="block-features__card--desc">
-              Lorem ipsum dolor sit amet, consectetur adipisc
-              Pellentesque vel enim a elit viverra elementuma.
-              Aliquam erat volutpat.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Block Introduction -->
-  <div class="block-intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 stick-in-bottom">
-          <div class="block-intro__img">
-            <img src="img/iPhone.png" alt="Mobile screen shot">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="block-intro__article">
-            <h2 class="block-intro__article--title">Introducing the fudi app</h2>
-            <div class="mCustomScrollbar">
-              <p class="block-intro__article--text">
-                Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
-                felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
-                ibulum tristique. Suspendisse tristique lacus ac mattis porta.<br><br>
-
-                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
-                libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
-                sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
-                Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.<br><br>
-
-                Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
-                malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
-                ante, a mattis massa.
+          <div class="col-md-4">
+            <div class="block-features__card">
+              <i class="block-features__card--icon burger animated"></i>
+              <h3 class="block-features__card--title">get inspired</h3>
+              <p class="block-features__card--desc">
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                Pellentesque vel enim a elit viverra elementuma.
+                Aliquam erat volutpat.
               </p>
             </div>
-            <div class="block-intro__article--stores">
-              <a href="https://itunes.apple.com/us/genre/ios/id36?mt=8" class="appstore">
-                <img src="img/appstore.png" alt="Download from App Store">
-              </a>
-              <a href="https://play.google.com/store?hl=en" class="playstore">
-                <img src="img/playstore.png" alt="Download from Play Store">
-              </a>
+          </div>
+          <div class="col-md-4">
+            <div class="block-features__card">
+              <i class="block-features__card--icon cash"></i>
+              <h3 class="block-features__card--title">get rewarded</h3>
+              <p class="block-features__card--desc">
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                Pellentesque vel enim a elit viverra elementuma.
+                Aliquam erat volutpat.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block-features__card">
+              <i class="block-features__card--icon chef"></i>
+              <h3 class="block-features__card--title">get social</h3>
+              <p class="block-features__card--desc">
+                Lorem ipsum dolor sit amet, consectetur adipisc
+                Pellentesque vel enim a elit viverra elementuma.
+                Aliquam erat volutpat.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Block Testimony -->
-  <div class="block-testimonial">
-    <div class="container">
-      <div class="owl-carousel">
-        <div class="block-testimonial__thumb">
-          <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
-          <p class="block-testimonial__thumb--comment">
-            “I am so happy because I found this recipe, and it just made my life easier.
-            Thanks  so much for sharing!”
-          </p>
-        <span class="block-testimonial__thumb--writer">
-          - Michael Dawson, San Francisco, CA -
-        </span>
-        </div>
-        <div class="block-testimonial__thumb">
-          <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
-          <p class="block-testimonial__thumb--comment">
-            “I am so happy because I found this recipe, and it just made my life easier.
-            Thanks  so much for sharing!”
-          </p>
-        <span class="block-testimonial__thumb--writer">
-          - Michael Dawson, San Francisco, CA -
-        </span>
-        </div>
-        <div class="block-testimonial__thumb">
-          <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
-          <p class="block-testimonial__thumb--comment">
-            “I am so happy because I found this recipe, and it just made my life easier.
-            Thanks  so much for sharing!”
-          </p>
-        <span class="block-testimonial__thumb--writer">
-          - Michael Dawson, San Francisco, CA -
-        </span>
+    <!-- Block Introduction -->
+    <div class="block-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 stick-in-bottom">
+            <div class="block-intro__img">
+              <img src="img/iPhone.png" alt="Mobile screen shot">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="block-intro__article">
+              <h2 class="block-intro__article--title">Introducing the fudi app</h2>
+              <div class="mCustomScrollbar">
+                <p class="block-intro__article--text">
+                  Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
+                  felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                  ibulum tristique. Suspendisse tristique lacus ac mattis porta.<br><br>
+
+                  Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
+                  libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                  sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                  Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.<br><br>
+
+                  Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
+                  malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                  ante, a mattis massa.
+                </p>
+              </div>
+              <div class="block-intro__article--stores">
+                <a href="https://itunes.apple.com/us/genre/ios/id36?mt=8" class="appstore">
+                  <img src="img/appstore.png" alt="Download from App Store">
+                </a>
+                <a href="https://play.google.com/store?hl=en" class="playstore">
+                  <img src="img/playstore.png" alt="Download from Play Store">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Block Testimony -->
+    <div class="block-testimonial">
+      <div class="container">
+        <div class="owl-carousel">
+          <div class="block-testimonial__thumb">
+            <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
+            <p class="block-testimonial__thumb--comment">
+              “I am so happy because I found this recipe, and it just made my life easier.
+              Thanks  so much for sharing!”
+            </p>
+        <span class="block-testimonial__thumb--writer">
+          - Michael Dawson, San Francisco, CA -
+        </span>
+          </div>
+          <div class="block-testimonial__thumb">
+            <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
+            <p class="block-testimonial__thumb--comment">
+              “I am so happy because I found this recipe, and it just made my life easier.
+              Thanks  so much for sharing!”
+            </p>
+        <span class="block-testimonial__thumb--writer">
+          - Michael Dawson, San Francisco, CA -
+        </span>
+          </div>
+          <div class="block-testimonial__thumb">
+            <img src="img/person.png" alt="" class="block-testimonial__thumb--img">
+            <p class="block-testimonial__thumb--comment">
+              “I am so happy because I found this recipe, and it just made my life easier.
+              Thanks  so much for sharing!”
+            </p>
+        <span class="block-testimonial__thumb--writer">
+          - Michael Dawson, San Francisco, CA -
+        </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block Browse -->
+    <div class="block-browse">
+      <h2 class="block-browse__title">Browse by cuisines</h2>
+      <div class="row no-margin">
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/1.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>327 Recipes</span>
+              <h4>Italian</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/2.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>856 Recipes</span>
+              <h4>Indian</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/3.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>27 Recipes</span>
+              <h4>French</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/4.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>174 Recipes</span>
+              <h4>Steakhouse</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/5.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>731 Recipes</span>
+              <h4>Seafood</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/6.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>237 Recipes</span>
+              <h4>Sushi</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/7.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>529 Recipes</span>
+              <h4>Mexican</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/8.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>145 Recipes</span>
+              <h4>Chinese</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/9.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>327 Recipes</span>
+              <h4>Pizza</h4>
+            </div>
+          </div>
+        </div>
+        <div class="block-browse__item">
+          <div class="block-browse__card">
+            <img src="img/10.jpg" alt="">
+            <div class="block-browse__card--content">
+              <span>1437 Recipes</span>
+              <h4>American</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block Numbers -->
+    <div class="block-numbers">
+      <div class="container">
+        <div class="row">
+          <div class="block-numbers__item">
+            <span class="nmbr">23567</span>
+            <p>Recipes Available</p>
+          </div>
+          <div class="block-numbers__item">
+            <span class="nmbr">431729</span>
+            <p>Active Users</p>
+          </div>
+          <div class="block-numbers__item">
+            <span class="nmbr">892173</span>
+            <p>Positive Reviews</p>
+          </div>
+          <div class="block-numbers__item">
+            <span class="nmbr">56581</span>
+            <p>Photos & Videos</p>
+          </div>
+          <div class="block-numbers__item">
+            <span class="nmbr">3182</span>
+            <p>Spices and Herbs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+</main>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
