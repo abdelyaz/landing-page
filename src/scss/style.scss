@@ -454,9 +454,20 @@ p {
 ********************/
 
 .block-numbers {
+  padding: 60px 0;
   text-align: center;
+  @media screen and (max-width: $tablet) {
+    padding: 40px 0;
+  }
+  @media screen and (max-width: $mobile-L) {
+    padding: 20px 0;
+  }
   &__item {
     flex: 1;
+    min-width: 314px;
+    @media screen and (max-width: $tablet) {
+      margin: 5px 0;
+    }
     span {
       font-size: 36px;
       font-weight: 700;
@@ -464,6 +475,40 @@ p {
   }
 }
 
+/********************
+* Footer
+********************/
+
+.footer {
+  padding: 40px 80px;
+  background-color: #f7f7f7;
+  @media screen and (max-width: $tablet) {
+    padding: 40px 0;
+  }
+  @media screen and (max-width: $mobile-L) {
+    padding: 20px 0;
+  }
+  &__copyright {
+    font-size: 14px;
+    font-weight: 300;
+    color: #8b8b8b;
+  }
+  &__by {
+    text-align: right;
+    a {
+      text-decoration: underline;
+    }
+    i {
+      color: #f00;
+    }
+  }
+
+  &__copyright, &__by {
+    @media screen and (max-width: $mobile-L) {
+      text-align: center;
+    }
+  }
+}
 
 
 
