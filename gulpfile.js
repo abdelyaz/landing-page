@@ -68,6 +68,9 @@ gulp.task('watch', function() {
 });
 
 
-
  // Default Task
 gulp.task('default', ['copy', 'js', 'scss', 'images', 'watch', 'serve']);
+
+
+ // Build Task
+ gulp.task('build', ['copy', 'js', 'scss', 'images']);
